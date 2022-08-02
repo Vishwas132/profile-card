@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(25, 161, 173);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: bottom 30rem left -27rem, top 24rem right -27rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 42rem;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-position: bottom 15rem left -16rem, top 23rem right -13rem;
+    background-size: 62rem;
+  }
+}
+
+.card-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 360px;
+  height: 400px;
+  background-color: white;
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  /*If backgrounf image is large use=> background-size: 100% 140px; */
+  background-size: 100% 160px;
+  border-radius: 5%;
+  box-shadow: 10px 15px 30px rgb(38, 140, 152);
+}
+
+.profile-wrapper {
+  padding: 10px;
+}
+
+#profile-picture {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: max-content;
+  background-color: white;
+}
+
+.name-age-wrapper {
+  display: flex;
+  height: min-content;
+}
+
+.large-font.light-font {
+  font-size: 18px;
+  margin-left: 10px;
+  letter-spacing: 0;
+}
+
+.city.light-font {
+  font-size: 15px;
+  margin-block-start: 3px;
+  letter-spacing: 0;
+}
+
+.large-font {
+  font-size: 18px;
+  margin-block-end: 3px;
+  font-weight: 700;
+  color: rgb(44, 47, 56);
+}
+
+.light-font {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(135, 135, 137);
+  letter-spacing: 2px;
+}
+
+#city {
+  margin-block-start: 0px;
+}
+
+#line {
+  width: 100%;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  /* margin-top: 5px; */
+}
+
+.data-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 23%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
