@@ -36,31 +36,36 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 360px;
+  width: 340px;
   height: 400px;
   background-color: white;
   background-image: url("images/bg-pattern-card.svg");
   background-repeat: no-repeat;
-  /*If backgrounf image is large use=> background-size: 100% 140px; */
   background-size: 100% 160px;
   border-radius: 5%;
   box-shadow: 10px 15px 30px rgb(38, 140, 152);
 }
 
-.profile-wrapper {
+#profile-wrapper {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile-picture-wrapper {
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+  width: min-content;
 }
 
 #profile-picture {
   border-radius: 50%;
-  border: 5px solid white;
-  width: max-content;
-  background-color: white;
 }
 
 .name-age-wrapper {
   display: flex;
-  height: min-content;
 }
 
 .large-font.light-font {
